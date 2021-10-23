@@ -12,7 +12,7 @@ Conseguir abrir o arquivo inicial (apresentacao.html) no seu navegador.
 
 ## Construido com
 
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Linguagemd e marcação utilizada
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Linguagem de marcação utilizada.
 
 ## Authors
 
