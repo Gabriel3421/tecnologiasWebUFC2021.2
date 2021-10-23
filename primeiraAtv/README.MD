@@ -2,7 +2,7 @@
 
 Faça a implementação do projeto da Olimpíada de Programação.
 Continue a implementação do código HTML, seguindo o layout da imagem abaixo:
-![WEB](https://github.com/Gabriel3421/tecnologiasWebUFC2021.2/blob/master/readmeAssets/layout.png)
+![WEB](https://github.com/Gabriel3421/tecnologiasWebUFC2021.2/blob/master/primeiraAtv/readmeAssets/layout.png)
 
 ## Getting Started
 
