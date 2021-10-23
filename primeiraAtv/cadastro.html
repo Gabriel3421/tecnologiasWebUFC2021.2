@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+</head>
+
+<body>
+  <form action="./confirmacao.html" method="get">
+    <table>
+      <tr>
+        <td>Nome:</td>
+        <td><input type="text" name="nome" required></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td>Senha:</td>
+        <td><input type="password" name="senha" required></td>
+      </tr>
+      <tr>
+        <td>Modalidade:</td>
+        <td>
+          <select name="modalidade" required>
+            <option value="programacao">Programação</option>
+            <option value="corrida">Corrida de seguidores de linha</option>
+            <option value="circuito">Montagem de Circuitos</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Linguagens:</td>
+        <td>
+          <input type="checkbox" id="Java" name="Java" value="Java">
+          <label for="Java">Java</label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="checkbox" id="C" name="C" value="C">
+          <label for="C">C</label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="checkbox" id="C++" name="C++" value="C++">
+          <label for="C++">C++</label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="checkbox" id="Python" name="Python" value="Python">
+          <label for="Python">Python</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Escolha o período:</td>
+        <td>
+          <input type="radio" id="manha" name="manha" value="manha">
+          <label for="manha">Manhã</label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="radio" id="tarde" name="tarde" value="tarde">
+          <label for="tarde">Tarde</label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="radio" id="noite" name="noite" value="noite">
+          <label for="noite">Noite</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Apresentação:</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <textarea name="apresetacao" id="apresetacao" cols="30" rows="10" required></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button type="submit">Enviar</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
