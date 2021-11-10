@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        /*  * {
+            background-color: dimgrey;
+        }  */
+
+        /* #corpo {
+            background-color: darkmagenta;
+        } */
+
+        /* div {
+            background-color: rgb(248, 4, 4);
+        } */
+
+        .seletorDiv {
+            font-size: 20px;
+            text-align: center;
+            border: solid 25px navy;
+            font-family: Arial, Helvetica, sans-serif;
+            width: calc(100%-50px);
+            background-color: chartreuse;
+        }
+
+        /*pseudo-classe*/
+
+        .seletorDiv:hover {
+            background-color: gold;
+        }
+
+        /**pseudo-elemento*/
+
+        .seletorDiv::first-letter {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+
+        table.zebra {
+          
+            background-color: whitesmoke;
+            border-right: tomato;
+            margin: 20px;
+            font-weight: bold;
+            width: 80%;
+            height: 300px;
+
+        }
+
+        table.zebra tr td {
+            border-bottom: 1px solid tan;
+        }
+
+        .zebra tbody tr:nth-child(odd) {
+            background-color: green;
+        }
+
+        .zebra tbody tr:nth-child(even) {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="seletorDiv" id="corpo">Conteúdo</div>
+
+    <div>
+        <table class="zebra">
+            <caption>Linguagens disponibilizadas</caption>
+            <tr>
+                <th>Nome</th>
+                <th>IDE</th>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Eclipse</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>DevC++</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>VS-Code</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
