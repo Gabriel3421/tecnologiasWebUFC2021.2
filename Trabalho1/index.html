@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="css/flappy.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body class="conteudo">
+    <h1>Flappy Bird</h1>
+
+    <div class="form">
+        <span class="form-title">Configurações do jogo</span>
+        <main>
+            <div class="input-group">
+                <label for="name">Nome do jogador:</label>
+                <input id="name" type="text" name="name" placeholder="Ex.: Gabriel" required>
+            </div>
+
+            <div class="input-group">
+                <label for="background">Cenário do jogo:</label>
+                <select id="background" name="modalidade" required>
+                    <option value="diurno">Diurno</option>
+                    <option value="noturno">Noturno</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="abertura">Intervalo entre abertura dos canos:</label>
+                <select id="abertura" name="abertura" required>
+                    <option value="300">Fácil</option>
+                    <option value="200">Médio</option>
+                    <option value="100">Difícil</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="espaco">Distancia entre os canos:</label>
+                <select id="espaco" name="espaco" required>
+                    <option value="500">Fácil</option>
+                    <option value="400">Médio</option>
+                    <option value="300">Difícil</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="velocidade">Velocidade do jogo:</label>
+                <input id="velocidade" type="number" min="1" max="10" value="1" name="velocidade" required>
+            </div>
+
+            <div class="input-group">
+                <label for="personagem">Personagens:</label>
+                <select id="personagem" name="personagem" required>
+                    <option value="passaro">Passaro</option>
+                    <option value="gato">Gato</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="tipo">Tipo de jogo:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="real">Real</option>
+                    <option value="treino">Treino</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="velocidadePersonagem">Velocidade do personagem:</label>
+                <select id="velocidadePersonagem" name="velocidadePersonagem" required>
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="pontuacao">Pontuação:</label>
+                <select id="pontuacao" name="pontuacao" required>
+                    <option value="1">1</option>
+                    <option value="10">10</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+        </main>
+        <button type="button" onclick="startGame()">Iniciar jogo</button>
+    </div>
+    <div wm-flappy></div>
+    <script src="js/flappy.js"></script>
+</body>
+
+</html>
