@@ -1,4 +1,5 @@
 const prompt = require('prompt-sync')();
+const numberRegex = new RegExp(/^\d+$/g)
 
 class Produto {
   constructor({ nome, codigo, preco, quantidade }) {
@@ -18,7 +19,7 @@ const produtos = [{
 
 console.log("Siga as instruções para criar um produto.")
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 1; i++) {
   console.log(`\n Criando produto: ${i + 1}\n`)
 
   const produto = {
@@ -33,8 +34,8 @@ for (let i = 0; i < 5; i++) {
     }
   }
   while (1) {
-    produto.codigo = prompt('Qual o codigo desse produto? ')
-    if (typeof (Number(produto.codigo)) != Number) {
+    produto.codigo = Number(prompt('Qual o codigo desse produto? '))
+    if (numberRegex.test(produto.codigo)) {
       break
     } else {
       console.log("O codigo deve ser um numero")
@@ -49,7 +50,6 @@ for (let i = 0; i < 5; i++) {
 
 function realizarPedido(codigo, quantidade) {
   const encontrarProdutoIndex = produtos.findIndex(produto => produto.codigo === codigo)
-  console.log(encontrarProdutoIndex)
   if (encontrarProdutoIndex === -1) {
     console.log("\nProduto não encontrado\n")
     return
@@ -73,7 +73,7 @@ while (1) {
   let quantidade
   while (1) {
     codigo = Number(prompt('Qual o codigo de produto do seu pedido? '))
-    if (typeof (codigo) != Number) {
+    if (numberRegex.test(codigo)) {
       break
     } else {
       console.log("O codigo deve ser um numero")
