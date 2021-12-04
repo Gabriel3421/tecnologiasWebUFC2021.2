@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Atividade da aula sobre jQuery</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+</head>
+
+<body class='conteudo exercicio'>
+    <h1>Atividade da aula sobre jQuery</h1>
+    <H2>Criar uma tabela com o array pessoa montar a tabela dentro da div conteudo</H2>
+    <div id='conteudo'></div>
+
+    <script>
+        const pessoas = [
+            { nome: 'Ana', nota: 9.1 },
+            { nome: 'Bianca', nota: 8.4 },
+            { nome: 'Carlos', nota: 7.6 },
+            { nome: 'Julia', nota: 9.7 }
+        ]
+        $('#conteudo').append('<table></table>')
+        $('table').append('<tr></tr>')
+        $('tr').append('<th>Nome</th>')
+        $('tr').append('<th>Nota</th>')
+        pessoas.forEach((pessoa, index) => {
+            $('table').append(`<tr id=${index}></tr>`)
+            $(`tr[id=${index}]`).append(`<td>${pessoa.nome}</td>`)
+            $(`tr[id=${index}]`).append(`<td>${pessoa.nota}</td>`)
+        })
+    </script>
+</body>
